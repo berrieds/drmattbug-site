@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr MattBug — Physician & Evaluator</title>
+  <meta name="description" content="Physician (MBChB, MRes) in Finland. Evidence-based evaluation: clinical research, patient safety, digital health & human-centred AI." />
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#0b0b0b;
+      --muted:#5b5b5b;
+      --line:#e6e6e6;
+      --card:#fafafa;
+      --max: 900px;
+      --r: 16px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      letter-spacing: 0.1px;
+    }
+    a{color:inherit; text-decoration-thickness:1px; text-underline-offset:3px;}
+    a:hover{opacity:.85}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 48px;}
+    .toproles{
+      font-size:14px;
+      color:var(--muted);
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      margin: 2px 0 18px;
+    }
+    .dot{opacity:.6}
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:16px;
+      border-bottom:1px solid var(--line);
+      padding-bottom:18px;
+      margin-bottom:22px;
+    }
+    nav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      font-size:14px;
+      color:var(--muted);
+    }
+    h1{
+      margin:0;
+      font-size:34px;
+      letter-spacing:-0.6px;
+    }
+    .sub{
+      margin:6px 0 0;
+      color:var(--muted);
+      max-width: 62ch;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap:18px;
+      align-items:start;
+      margin: 18px 0 26px;
+    }
+    @media (max-width: 740px){
+      .hero{grid-template-columns:1fr;}
+      header{align-items:flex-start; flex-direction:column;}
+    }
+    .card{
+      border:1px solid var(--line);
+      background:var(--card);
+      border-radius:var(--r);
+      padding:16px;
+    }
+    .card h2{
+      margin:0 0 10px;
+      font-size:16px;
+      letter-spacing:-0.2px;
+    }
+    .pillrow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:10px;
+    }
+    .pill{
+      display:inline-block;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:8px 12px;
+      background:#fff;
+      font-size:14px;
+      text-decoration:none;
+      white-space:nowrap;
+    }
+    section{margin: 28px 0;}
+    h3{
+      margin:0 0 12px;
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing: 0.12em;
+      color:var(--muted);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media (max-width: 740px){ .grid{grid-template-columns:1fr;} }
+    .itemtitle{font-weight:600; margin:0 0 6px;}
+    .small{color:var(--muted); font-size:14px; margin:0;}
+    .footer{
+      border-top:1px solid var(--line);
+      margin-top:36px;
+      padding-top:16px;
+      color:var(--muted);
+      font-size:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      justify-content:space-between;
+    }
+    .photo{
+      width:100%;
+      border-radius: var(--r);
+      border:1px solid var(--line);
+      background:#fff;
+      overflow:hidden;
+    }
+    .photo img{display:block; width:100%; height:auto;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Bob-style roles strapline -->
+    <div class="toproles">
+      <span>Physician</span><span class="dot">•</span>
+      <span>Evidence-led evaluator</span><span class="dot">•</span>
+      <span>Patient safety</span><span class="dot">•</span>
+      <span>Digital health</span><span class="dot">•</span>
+      <span>Human-centred AI</span>
+    </div>
+
+    <header>
+      <div>
+        <h1>Dr MattBug</h1>
+        <p class="sub">
+          Physician (MBChB, MRes) based in Finland. I do clear, evidence-based evaluation—especially where real-world
+          feasibility, risk/benefit, and governance matter.
+        </p>
+      </div>
+
+      <!-- simple nav like Nicola's -->
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card">
+        <h2>About</h2>
+        <p class="small">
+          I enjoy weighing claims against evidence, spotting where a plan won’t survive contact with reality, and writing
+          structured, fair assessments. I’m particularly interested in digital health and trustworthy, human-centred AI
+          in clinical care.
+        </p>
+        <div class="pillrow">
+          <a class="pill" href="/cv">CV (PDF)</a>
+          <a class="pill" href="/qip">QI project (PDF)</a>
+          <a class="pill" href="/mres">MRes dissertation (PDF)</a>
+        </div>
+      </div>
+
+      <!-- Florian-style: one calm image; delete this block if you don't want a photo -->
+      <div class="photo" aria-label="Portrait (optional)">
+        <!-- Put a file named 'portrait.jpg' in your site folder and uncomment the next line -->
+        <-- <img src="/portrait.jpg" alt="Portrait of Dr MattBug"> -->
+        <div style="padding:16px; color:var(--muted); font-size:14px;">
+        </div>
+      </div>
+    </div>
+
+    <section id="work">
+      <h3>Selected work</h3>
+
+      <!-- Bob-style cards for projects -->
+      <div class="grid">
+        <div class="card">
+          <p class="itemtitle">HRURVs (High-Risk Unscheduled Return Visits) — ED Quality Improvement</p>
+          <p class="small">
+            Defined metric, analysed ED data, tracked weekly HRURVs (run chart), and ran an awareness PDSA cycle.
+          </p>
+          <div class="pillrow">
+            <a class="pill" href="/qip">Open PDF</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <p class="itemtitle">MRes dissertation — SLE, inflammation, CV risk & dyslipidemia</p>
+          <p class="small">
+            Research dissertation (University of Manchester, 2016).
+          </p>
+          <div class="pillrow">
+            <a class="pill" href="/mres">Open PDF</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <h3>What I evaluate well</h3>
+      <div class="card">
+        <ul style="margin:0; padding-left:18px;">
+          <li>Evidence appraisal & study design (bias, endpoints, feasibility)</li>
+          <li>Patient safety, clinical governance, risk management</li>
+          <li>Quality improvement / audit (measurement, run charts, PDSA)</li>
+          <li>Health systems & implementation realism (workflow, adoption, constraints)</li>
+          <li>Ethics and data governance (proportionate safeguards)</li>
+          <li>Digital health and trustworthy, human-centred AI in clinical care</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <div class="card">
+        <p class="small" style="margin:0;">
+          Email: <a href="mailto:matthew.jeffries@doctors.org.uk">matthew.jeffries@doctors.org.uk</a><br/>
+          LinkedIn: <a href="https://www.linkedin.com/in/drmatthewjeffries">linkedin.com/in/drmatthewjeffries</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="y"></span> drmattbug.com</div>
+      <div>No tracking cookies • No patient-identifiable information</div>
+    </div>
+
+  </div>
+
+  <script>
+    // tiny convenience only; remove if you want zero JS
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
